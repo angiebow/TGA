@@ -1,0 +1,51 @@
+Dijkstra's Algorithm:
+
+Advantages:
+
+Guaranteed to find the shortest path in non-negative weighted graphs.
+Efficient when used with a priority queue (e.g., binary heap or Fibonacci heap).
+Provides the shortest path from a single source to all other vertices.
+Disadvantages:
+
+Doesn't work correctly with negative edge weights.
+Can be slow on dense graphs due to its time complexity.
+Bellman-Ford Algorithm:
+
+Advantages:
+
+Works correctly with graphs containing negative edge weights and can detect negative weight cycles.
+Suitable for scenarios where negative weights are present.
+Disadvantages:
+
+Slower than Dijkstra's algorithm for finding the shortest path in graphs with non-negative weights.
+Time complexity is O(V*E), where V is the number of vertices and E is the number of edges, which can be inefficient on large graphs.
+A Search Algorithm:*
+
+Advantages:
+
+Admissible heuristic (underestimates the true cost) can provide an efficient solution for pathfinding problems.
+Works well for pathfinding in game development and robotics.
+Disadvantages:
+
+Requires a consistent and admissible heuristic to guarantee an optimal solution.
+The quality of the solution heavily depends on the chosen heuristic function.
+Floyd-Warshall Algorithm:
+
+Advantages:
+
+Finds the shortest path between all pairs of vertices in a weighted graph.
+Works correctly with graphs containing negative edge weights (but may not work with negative weight cycles).
+Disadvantages:
+
+Slower time complexity of O(V^3) makes it less efficient for large graphs.
+Requires more memory to store a matrix of distances for all pairs of vertices.
+Johnson's Algorithm:
+
+Advantages:
+
+Can efficiently handle graphs with both positive and negative edge weights by reweighting the edges.
+Can be faster than the Floyd-Warshall algorithm for sparse graphs.
+Disadvantages:
+
+Requires additional preprocessing steps to reweight the edges, which can be computationally expensive.
+May not be as straightforward to implement as Dijkstra's or Bellman-Ford algorithms.
