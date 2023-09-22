@@ -84,13 +84,13 @@ int main(){
 	g.addEdge(2, 3, 2);
 	g.addEdge(3, 4, 3);
 	g.addEdge(4, 5, 1);
-  g.addEdge(5, 0, 8);
-  g.addEdge(0, 6, 7);
-  g.addEdge(1, 6, 6);
-  g.addEdge(2, 6, 3);
-  g.addEdge(3, 6, 2);
-  g.addEdge(4, 6, 4);
-  g.addEdge(5, 6, 3);
+  	g.addEdge(5, 0, 8);
+  	g.addEdge(0, 6, 7);
+  	g.addEdge(1, 6, 6);
+  	g.addEdge(2, 6, 3);
+  	g.addEdge(3, 6, 2);
+  	g.addEdge(4, 6, 4);
+  	g.addEdge(5, 6, 3);
     
 	g.kruskals_mst();
 
